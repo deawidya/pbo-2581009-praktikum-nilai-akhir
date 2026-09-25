@@ -44,17 +44,19 @@ public class NilaiAkhir {
 
         boolean lulus = akhir >= 60;
 
+        System.out.println("-------------------------------------");
         System.out.println("Nilai Akhir =" + akhir);
         System.out.println("dipotong   =  " + dipotong);
         System.out.println("dibulatkan = " + dibulatkan);
         System.out.println("versi int  = " + akhirVersiInt);
 
-        System.out.println();
+        System.out.println("-------------------------------------");
         System.out.println("===== NILAI AKHIR =====");
         System.out.println("Praktikum   : " + praktikum + "  (30%)");
         System.out.println("Tugas       : " + tugas + "  (20%)");
         System.out.println("MID         : " + mid + "  (20%)");
         System.out.println("Final       : " + finalNilai + "  (30%)");
+        System.out.println("-------------------------------------");
         System.out.println("Nilai akhir       : " + akhir);
         System.out.println("Dipotong   (int)  : " + dipotong);
         System.out.println("Dibulatkan (round): " + dibulatkan);
