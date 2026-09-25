@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class NilaiAkhir {
     public static void main(String[] args) {
         // Empat bobot disimpan sebagai konstanta double, sesuai ketentuan
+        // Tidak perlu kurung di sini karena tiap baris hanya berisi SATU nilai
+        // literal yang langsung disimpan ke satu variabel — tidak ada operator
+        // (*, +, /) yang digabung dalam satu ekspresi, jadi tidak ada urutan
+        // pengerjaan (precedence) yang perlu diatur dengan kurung.
         final double BOBOT_PRAKTIKUM = 0.30;
         final double BOBOT_TUGAS = 0.20;
         final double BOBOT_MID = 0.20;
@@ -34,7 +38,6 @@ public class NilaiAkhir {
         // perkalian bobot dulu, baru menjumlahkan hasilnya.
         double akhir = praktikum * BOBOT_PRAKTIKUM + tugas * BOBOT_TUGAS + mid * BOBOT_MID;
         akhir += finalNilai * BOBOT_FINAL; // komponen final ditambahkan lewat augmented assignment
-
         int dipotong = (int) akhir;          // memotong ke arah nol — pecahannya dibuang
         long dibulatkan = Math.round(akhir); // membulatkan ke bilangan bulat terdekat
         double selisih = akhir - dibulatkan; // tidak selalu 0 — double menyimpan pecahan secara mendekati
@@ -44,7 +47,6 @@ public class NilaiAkhir {
         System.out.println("Nilai Akhir =" + akhir);
         System.out.println("dipotong   =  " + dipotong);
         System.out.println("dibulatkan = " + dibulatkan);
-
         System.out.println("versi int  = " + akhirVersiInt);
 
         System.out.println();
